@@ -17,12 +17,11 @@ import lombok.NoArgsConstructor;
 public class Passenger {
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
     private int passengerId;
 	
-	@Column
+	@Column(nullable = false)
 	private String name;
-	@Column
+	@Column(nullable = false)
 	private int age;
 	@Column
 	private Double luggage;
